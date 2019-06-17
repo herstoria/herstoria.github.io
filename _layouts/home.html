@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+<header class="masthead" style="background-color: #2d2d2d;">
+  <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>{{ site.title }}</h1>
+            {% if site.description %}
+            <span class="subheading">{{ site.description }}</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        {{ content }}
+
+        <!-- Home Post List -->
+        {% for post in paginator.posts %}
+
+        <article class="post-preview">
+          <img class="img-fluid" src="{{ post.background }}">
+          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+            <h2 class="post-title">{{ post.title }}</h2>
+            {% if post.subtitle %}
+            <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+            {% else %}
+            <a>{{ post.excerpt | strip_html | truncatewords: 15 }}</a>
+            {% endif %}
+          </a>
+          <p class="post-meta">作者 / 
+            {% if post.author %}
+            {{ post.author }}
+            {% else %}
+            {{ site.author }}
+            {% endif %}
+            {% if post.editor %}
+            &middot; 编辑 / {{ post.editor }}
+            {% else %}
+            {% endif %}
+            &middot; {{ post.date | date: '%Y/%m/%d' }}
+            {% if post.credit %} &middot; 题图 &copy; <a href="{{ post.credit-url }}">{{ post.credit }}</a> / <a href="{{ post.license-url }}" style="color: inhert;">{{ post.license }}</a>{% else %}{% endif %}
+          </p>
+        </article>
+
+        <hr>
+
+        {% endfor %}
+
+        <!-- Pager -->
+        {% if paginator.total_pages > 1 %}
+
+        <div class="clearfix">
+
+          {% if paginator.previous_page %}
+          <a class="btn btn-primary float-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;
+            新的文章<span class="d-none d-md-inline"></span></a>
+          {% endif %}
+
+          {% if paginator.next_page %}
+          <a class="btn btn-primary float-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">旧的文章<span class="d-none d-md-inline"></span> &rarr;</a>
+          {% endif %}
+
+        </div>
+
+        {% endif %}
+
+      </div>
+    </div>
+  </div>

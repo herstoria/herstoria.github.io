@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  {% else %}
+  <header class="masthead" style="background-color: #2d2d2d;">
+    {% endif %}
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>{{ page.title }}</h1>
+            {% if page.subtitle %}
+            <h2 class="subheading">{{ page.subtitle }}</h2>
+            {% endif %}
+            <span class="meta">
+              作者 / 
+              {% if page.author %}
+                {% if page.author-url %}
+                  <a href="{{ page.author-url }}">{{ page.author }}</a>
+                {% else %}
+                  {{ page.author }}
+                {% endif %}
+              {% else %}
+              {{ site.author }}
+              {% endif %} 
+              {% if page.editor %}
+              &middot; 编辑 / 
+                {% if page.editor-url %}
+                  <a href="{{ page.editor-url }}">{{ page.editor }}</a>
+                {% else %}
+                  {{ page.editor }}
+                {% endif %}
+              {% else %}
+              {% endif %}
+              &middot; {{ page.date | date: '%Y/%m/%d' }} &middot; {% include read_time.html
+              content=page.content %}
+            </span>
+            {% if page.credit %}
+            <span class="credit">
+              题图 &copy; <a href="{{ page.credit-url }}">{{ page.credit }}</a>, <a href="{{ page.license-url }}">{{ page.license }}</a>.
+            </span>
+            {% else %}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        {{ content }}
+
+        <img class="img-fluid" src="../images/footer.png">
+
+        <div class="clearfix">
+
+          {% if page.previous.url %}
+          <a class="btn btn-primary float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; 上一篇<span class="d-none d-md-inline">
+              </span></a>
+          {% endif %}
+          {% if page.next.url %}
+          <a class="btn btn-primary float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">下一篇<span class="d-none d-md-inline">
+              </span> &rarr;</a>
+          {% endif %}
+
+        </div>
+
+      </div>
+    </div>
+  </div>

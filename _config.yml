@@ -2,7 +2,7 @@ title:              Herstoria
 email:              981242716@qq.com
 description:        一群女权主义者的亚历山大学院
 author:             Herstoria
-baseurl:            ""
+baseurl:            "/new-site"
 url:                "https://herstoria.me"
 permalink:          "/:title:output_ext"
 # Social Profiles
@@ -16,7 +16,7 @@ linkedin_username:
 rss_link: https://herstoria.me/feed.xml
 
 # Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+google_analytics:   UA-139458787-1
 
 # Build settings
 markdown:           kramdown

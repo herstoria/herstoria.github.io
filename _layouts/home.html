@@ -41,6 +41,12 @@ layout: default
           <p class="post-meta">作者 / 
             {% if post.author %}
             {{ post.author }}
+              {% if post.author2 %}
+                & {{ post.author2 }}
+                  {% if post.author3 %}
+                    & {{ post.author3 }}
+                  {% endif %}
+              {% endif %}
             {% else %}
             {{ site.author }}
             {% endif %}

@@ -27,7 +27,21 @@ layout: default
                 {% endif %}
               {% else %}
               {{ site.author }}
-              {% endif %} 
+              {% endif %}
+              {% if page.author2 %} & 
+                {% if page.author2-url %}
+                  <a href="{{ page.author2-url }}">{{ page.author2 }}</a>
+                {% else %}
+                  {{ page.author2 }}
+                {% endif %}
+              {% endif %}
+              {% if page.author3 %} & 
+                {% if page.author3-url %}
+                  <a href="{{ page.author3-url }}">{{ page.author3 }}</a>
+                {% else %}
+                  {{ page.author3 }}
+                {% endif %}
+              {% endif %}
               {% if page.editor %}
               &middot; 编辑 / 
                 {% if page.editor-url %}
@@ -35,7 +49,20 @@ layout: default
                 {% else %}
                   {{ page.editor }}
                 {% endif %}
-              {% else %}
+              {% endif %}
+              {% if page.editor2 %} & 
+                {% if page.editor2-url %}
+                  <a href="{{ page.editor2-url }}">{{ page.editor2 }}</a>
+                {% else %}
+                  {{ page.editor2 }}
+                {% endif %}
+              {% endif %}
+              {% if page.editor3 %} & 
+                {% if page.editor3-url %}
+                  <a href="{{ page.editor3-url }}">{{ page.editor3 }}</a>
+                {% else %}
+                  {{ page.editor3 }}
+                {% endif %}
               {% endif %}
               &middot; {{ page.date | date: '%Y/%m/%d' }} &middot; {% include read_time.html
               content=page.content %}

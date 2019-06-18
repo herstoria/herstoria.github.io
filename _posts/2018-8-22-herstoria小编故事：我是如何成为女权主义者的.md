@@ -1,10 +1,19 @@
 ---
 layout: post
-title: herstoria小编故事：我是如何成为女权主义者的
+title: Herstoria 小编故事：我是如何成为女权主义者的
+author: 陆贽
+author-url: https://www.zhihu.com/people/ru-shi-shuo-59
+editor: 陆贽
+editor-url: https://www.zhihu.com/people/ru-shi-shuo-59
 tags:
   - 个人故事
   - 女权经历
 excerpt_separator: <!--more-->
+background: ../images/editorial/24925735838_bf4107aa84_k.jpg
+credit: "Encuentro de Feministas Diversas"
+credit-url: https://www.flickr.com/photos/159443955@N07/24925735838/
+license: "CC BY-SA 2.0"
+license-url: http://creativecommons.org/licenses/by-sa/2.0/
 ---
 
 

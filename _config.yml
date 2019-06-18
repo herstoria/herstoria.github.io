@@ -2,7 +2,7 @@ title:              Herstoria
 email:              981242716@qq.com
 description:        一群女权主义者的亚历山大学院
 author:             Herstoria
-baseurl:            "/new-site"
+baseurl:            ""
 url:                "https://herstoria.me"
 permalink:          "/:title:output_ext"
 # Social Profiles

@@ -40,22 +40,54 @@ layout: default
           </a>
           <p class="post-meta">作者 / 
             {% if post.author %}
-            {{ post.author }}
-              {% if post.author2 %}
-                & {{ post.author2 }}
-                  {% if post.author3 %}
-                    & {{ post.author3 }}
-                  {% endif %}
+              {% if post.author-url %}
+                <a href="{{ post.author-url }}">{{ post.author }}</a>
+              {% else %}
+                {{ post.author }}
               {% endif %}
             {% else %}
-            {{ site.author }}
+              {{ site.author }}
             {% endif %}
-            {% if post.editor %}
-            &middot; 编辑 / {{ post.editor }}
-            {% else %}
+            {% if post.author2 %}
+              {% if post.author2-url %}
+                <a href="{{ page.author2-url }}"> & {{ post.author2 }}</a>
+              {% else %} & {{ post.author2 }}{% endif %}
+            {% endif %}
+            {% if post.author3 %}
+              {% if post.author3-url %}
+                <a href="{{ post.author3-url }}"> & {{ post.author3 }}</a>
+              {% else %} & {{ post.author3 }}{% endif %}
+            {% endif %}
+            {% if post.editor %} &middot; 编辑 / 
+              {% if post.editor-url %}
+                <a href="{{ post.editor-url }}">{{ post.editor }}</a>
+              {% else %}
+                {{ post.editor }}
+              {% endif %}
+            {% endif %}
+            {% if post.editor2 %}
+              {% if post.editor2-url %}
+                <a href="{{ post.editor2-url }}"> & {{ post.editor2 }}</a>
+              {% else %} & {{ post.editor2 }} {% endif %}
+            {% endif %}
+            {% if post.editor3 %}
+              {% if post.editor3-url %}
+                <a href="{{ post.editor3-url }}"> & {{ post.editor3 }}</a>
+              {% else %} & {{ post.editor3 }} {% endif %}
             {% endif %}
             &middot; {{ post.date | date: '%Y/%m/%d' }}
-            {% if post.credit %} &middot; 题图 &copy; <a href="{{ post.credit-url }}">{{ post.credit }}</a> / <a href="{{ post.license-url }}" style="color: inhert;">{{ post.license }}</a>{% else %}{% endif %}
+            {% if post.credit %} &middot; 题图 &copy; 
+              {% if post.credit-url %}
+                <a href="{{ post.credit-url }}">{{ post.credit }}</a>
+              {% else %}
+                {{ post.credit }}
+              {% endif %} / 
+              {% if post.license-url %}
+                <a href="{{ post.license-url }}" style="color: inhert;">{{ post.license }}</a>
+              {% else %}
+                {{ post.license }}
+              {% endif %}
+            {% endif %}
           </p>
         </article>
 

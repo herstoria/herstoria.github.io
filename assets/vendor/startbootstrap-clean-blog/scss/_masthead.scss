@@ -30,14 +30,14 @@ header.masthead {
     text-align: center;
     h1 {
       font-size: 50px;
-      margin-top: 55px;
+      margin-top: auto!important;
     }
     .subheading {
       font-size: 24px;
       font-weight: 300;
       line-height: 1.1;
       display: block;
-      margin: 10px 0 180px;
+      margin: auto 0 145px 0;
       @include sans-serif-font;
     }
     @media only screen and (min-width: 768px) {

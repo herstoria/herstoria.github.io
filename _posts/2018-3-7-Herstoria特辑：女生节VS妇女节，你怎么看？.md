@@ -1,23 +1,29 @@
 ---
 layout: post
 title: Herstoria 特辑：女生节VS妇女节，你怎么看？
+author: 讳言
+author2: 陆贽
+author2-url: https://www.zhihu.com/people/ru-shi-shuo-59
+author3: 杨则非
+author3-url: https://www.zhihu.com/people/gu-chen-qiu
+editor: heaven疏狂
+editor-url: https://www.zhihu.com/people/heavenshu-kuang
 tags:
   - 女生节
   - 妇女节
+background: ../images/妇女节/32517333983_d4c5d34b86_k.jpg
+credit: "Master Steve Rapport"
+credit-url: https://www.flickr.com/photos/indivisiblesf/32517333983/
+license: "CC BY 2.0"
+license-url: https://creativecommons.org/licenses/by/2.0/
 excerpt_separator: <!--more-->
 ---
 
-**采访** ：讳言 [陆贽](https://www.zhihu.com/people/ru-shi-shuo-59) [杨则非](https://www.zhihu.com/people/ru-shi-shuo-59)
-
-**作者** ：讳言 [陆贽](https://www.zhihu.com/people/ru-shi-shuo-59)
-
-**编辑**：[heaven疏狂](https://www.zhihu.com/people/heavenshu-kuang)
-
 ## 导言
 
-高校女生节是当今高校学生最为重视的人造节日，3.7这一天很多学校的校园内会张贴起各种红色横幅，很多院系甚至是通过横幅竞相告白女生，竞相博人眼球。无数学校会在这一天为女生举办各种各样的活动，他们组织起男生在女生楼下喊楼告白；他们为女生送上象征女性美丽与浪漫的粉色玫瑰；他们帮女生占座为女生送饭；他们为女生免费实现愿望……
+高校女生节是当今高校学生最为重视的人造节日，3.7 这一天很多学校的校园内会张贴起各种红色横幅，很多院系甚至是通过横幅竞相告白女生，竞相博人眼球。无数学校会在这一天为女生举办各种各样的活动，他们组织起男生在女生楼下喊楼告白；他们为女生送上象征女性美丽与浪漫的粉色玫瑰；他们帮女生占座为女生送饭；他们为女生免费实现愿望……
 
-本期Herstoria特辑，我们特别采访了几位嘉宾谈谈自己的女生节经历和节日感受，以及对女生节和妇女节的区别的看法。
+本期 Herstoria 特辑，我们特别采访了几位嘉宾谈谈自己的女生节经历和节日感受，以及对女生节和妇女节的区别的看法。
 
 <!--more-->
 

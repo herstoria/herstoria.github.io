@@ -1,10 +1,22 @@
 // Global styling for this template
 body {
-  font-size: 18px;
+  font-size: 16px;
   color: $gray-900;
   line-height: 1.9;
   font-weight: 300;
   @include serif-font;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 p {

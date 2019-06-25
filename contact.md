@@ -11,7 +11,7 @@ permalink: /contact/
 
 ## 反馈
 
-官网初上线，还有很多需要改进的地方，敬请读者提供意见反馈。你可以在 Herstoria 的公众号或微博（是的，小 her 有微博啦！）留言，有条件的读者也可以直接来[我们的 github](https://github.com/herstoria/herstoria.github.io)上[提 issue ](https://github.com/herstoria/herstoria.github.io/issues/new)或参与贡献。
+官网初上线，还有很多需要改进的地方，敬请读者提供意见反馈。你可以在 Herstoria 的公众号或微博（是的，小 her 有微博啦！）留言，有条件的读者也可以直接来[我们的 github ](https://github.com/herstoria/herstoria.github.io)上[提 issue ](https://github.com/herstoria/herstoria.github.io/issues/new)或参与贡献。
 
 ## 联系编辑
 

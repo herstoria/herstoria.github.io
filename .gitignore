@@ -8,3 +8,4 @@ Gemfile.lock
 *.gem
 _site
 _site
+.DS_Store

@@ -1,5 +1,5 @@
 title:              Herstoria
-email:              981242716@qq.com
+email:              ""
 description:        一群女权主义者的亚历山大学院
 author:             Herstoria
 baseurl:            ""
@@ -9,10 +9,10 @@ permalink:          "/:title:output_ext"
 zhihu_zhuanlan: herstoria
 weibo_username: 6369020131
 weixin_link: https://herstoria.me/contact
-twitter_username: 
+twitter_username:
 github_username: herstoria
-facebook_username: 
-linkedin_username: 
+facebook_username:
+linkedin_username:
 rss_link: https://herstoria.me/feed.xml
 
 # Add your google-analytics ID here to activate google analytics
@@ -20,7 +20,7 @@ google_analytics:   UA-139458787-1
 
 # Build settings
 markdown:           kramdown
-paginate:           8
+paginate:           10
 paginate_path:      "/page-:num/"
 plugins:
   - jekyll-feed

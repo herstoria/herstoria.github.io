@@ -4,19 +4,27 @@ layout: default
 
 <!-- Page Header -->
 
-  <header class="masthead" style="background-color: #2d2d2d;">
+  <header class="masthead" style="height: 100vh; min-height: 500px; background-size: cover; background-position: center; background-repeat: no-repeat; background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}');">
     <div class="overlay"></div>
-     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="page-heading">
-            <h1>{{ site.title }}</h1>
-            {% if site.description %}
-            <span class="subheading">{{ site.description }}</span>
-            {% endif %}
-          </div>
+     <div class="container h-100">
+      <div class="row h-88 align-items-center">
+        <div class="col-lg-8 col-md-10 mx-auto text-center pt-5">
+          <p style="font-size: 64px; color: white; font-weight: 500; line-height: 1.1; display: block;">{{ site.title }}</p>
+          {% if site.description %}
+          <p style="font-size: 30px; color: white; font-weight: 300; line-height: 1.1; display: block;">{{ site.description }}</p>
+          {% endif %}
         </div>
       </div>
+      {% if page.credit %}
+      <div class="row h-12">
+        <div class="col-lg-8 col-md-10 mx-auto text-center">
+          <p style="font-size: 0.9rem; color: white; font-weight: 200;">
+            图 &copy; <a style="color: white;" href="{{ page.credit-url }}">{{ page.credit }}</a>, <a style="color: white;" href="{{ page.license-url }}">{{ page.license }}</a>.
+          </p>
+        </div>
+      </div>
+      {% else %}
+      {% endif %}
     </div>
   </header>
 
@@ -40,7 +48,7 @@ layout: default
             <a>{{ post.excerpt | strip_html | truncatewords: 15 }}</a>
             {% endif %}
           </a>
-          <p class="post-meta">作者 / 
+          <p class="post-meta">作者 /
             {% if post.author %}
               {% if post.author-url %}
                 <a href="{{ post.author-url }}">{{ post.author }}</a>
@@ -60,7 +68,7 @@ layout: default
                 <a href="{{ post.author3-url }}"> & {{ post.author3 }}</a>
               {% else %} & {{ post.author3 }}{% endif %}
             {% endif %}
-            {% if post.editor %} &middot; 编辑 / 
+            {% if post.editor %} &middot; 编辑 /
               {% if post.editor-url %}
                 <a href="{{ post.editor-url }}">{{ post.editor }}</a>
               {% else %}
@@ -78,12 +86,12 @@ layout: default
               {% else %} & {{ post.editor3 }} {% endif %}
             {% endif %}
             &middot; {{ post.date | date: '%Y/%m/%d' }}
-            {% if post.credit %} &middot; 题图 &copy; 
+            {% if post.credit %} &middot; 题图 &copy;
               {% if post.credit-url %}
                 <a href="{{ post.credit-url }}">{{ post.credit }}</a>
               {% else %}
                 {{ post.credit }}
-              {% endif %} / 
+              {% endif %} /
               {% if post.license-url %}
                 <a href="{{ post.license-url }}" style="color: inhert;">{{ post.license }}</a>
               {% else %}

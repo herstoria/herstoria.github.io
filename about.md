@@ -3,6 +3,11 @@ layout: page
 title: 关于 Herstoria
 description: 对男权形成常态的世界发出一点声音
 permalink: /about/
+background: ../images/editorial/39807219691_f5d4f8e5a2_k.jpg
+credit: "kelly bell photography"
+credit-url: https://www.flickr.com/photos/130808023@N03/39807219691
+license: "CC BY 2.0"
+license-url: https://creativecommons.org/licenses/by/2.0/
 ---
 
 ## 一群女权主义者的亚历山大学院
@@ -13,9 +18,10 @@ permalink: /about/
 
 ## 订阅
 
-- [知乎专栏](https://zhuanlan.zhihu.com/herstoria)
-- [微博](https://weibo.com/u/6369020131)
-- [RSS](https://herstoria.me/feed.xml)
-- 微信公众号（搜索「Her小号」，或请扫描下方二维码）
+<ul style="margin-top:1rem;">
+<li><a href="https://zhuanlan.zhihu.com/herstoria">知乎专栏</a></li>
+<li><a href="https://weibo.com/u/6369020131">微博</a></li>
+<li><a href="https://herstoria.me/feed.xml">RSS</a></li>
+<li>微信公众号（搜索「Her小号」，或请扫描下方二维码）</li>
 
 <img class="img-fluid" src="../images/footer.png">

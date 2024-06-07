@@ -21,7 +21,7 @@ license-url: https://creativecommons.org/licenses/by/2.0/
 <ul style="margin-top:1rem;">
 <li><a href="https://zhuanlan.zhihu.com/herstoria">知乎专栏</a></li>
 <li><a href="https://weibo.com/u/6369020131">微博</a></li>
-<li><a href="https://herstoria.me/feed.xml">RSS</a></li>
+<li><a href="https://herstoria.github.io/feed.xml">RSS</a></li>
 <li>微信公众号（搜索「Her小号」，或请扫描下方二维码）</li>
 
 <img class="img-fluid" src="../images/footer.png">

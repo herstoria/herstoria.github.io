@@ -3,17 +3,16 @@ email:              ""
 description:        一群女权主义者的亚历山大学院
 author:             Herstoria
 baseurl:            ""
-url:                "https://herstoria.me"
+url:                "https://herstoria.github.io"
 permalink:          "/:title:output_ext"
 # Social Profiles
-zhihu_zhuanlan: herstoria
 weibo_username: 6369020131
-weixin_link: https://herstoria.me/contact
+weixin_link: https://herstoria.github.io/contact
 twitter_username:
 github_username: herstoria
 facebook_username:
 linkedin_username:
-rss_link: https://herstoria.me/feed.xml
+rss_link: https://herstoria.github.io/feed.xml
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   UA-139458787-1
